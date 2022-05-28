@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Josefin+Sans:wght@100;200;300;400;500&family=Lora:ital,wght@1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,300&family=Varela&family=Varela+Round&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS rules to specify families
+
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Varela', sans-serif;
+font-family: 'Varela Round', sans-serif; */
+
+
+@layer base {
+    html {
+        /* set global font-family */
+        /* font-family: Josefin Sans,system-ui, sans-serif; */
+      }
+    body {
+        /* @apply font-[Cormorant]; */
+        background-color: #f6f6f4 ;
+        color: #3e3930
+    }
+    li {
+        @apply px-4;
+        @apply cursor-pointer;
+    }
+   /* override the focus ring color */
+    [class*="focus"] {
+        --tw-ring-color: #6B7280 !important
+    }
+}
+
+@layer components{
+    .settingsForm > label {
+        font-size: 20px;
+        margin-top: 20px;
+        
+    }
+    .settingsForm > input {
+        color: gray;
+        margin: 10px 0;
+        height: 30px;
+        border: none;
+        border-bottom: 1px solid lightgreen;
+        padding: 1em;
+
+
+    }
+
+    .Login {
+        background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("./assets/images/hairdresser-tools-min.jpeg");
+    }
+
+    .loginform > label {
+        color: gray;
+        /* margin: 5px 0; */
+        height: 30px;
+        border: none;
+        /* border-bottom: 1px solid lightgreen; */
+        /* padding: 1em; */
+    }
+
+    .loginform > input {
+        color: gray;
+        margin: 10px 0;
+        height: 30px;
+        border: none;
+        border-bottom: 1px solid lightgreen;
+        padding: 1em;
+    }
+
+    .Register {
+        background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("./assets/images/hairdresser-tools-min.jpeg");
+    }
+
+    .registerform > label {
+        color: gray;
+        /* margin: 5px 0; */
+        height: 30px;
+        border: none;
+        /* border-bottom: 1px solid lightgreen; */
+        /* padding: 1em; */
+    }
+
+    .registerform > input {
+        color: gray;
+        margin: 10px 0;
+        height: 30px;
+        border: none;
+        border-bottom: 1px solid lightgreen;
+        padding: 1em;
+    }
+
+    .topBar a:active {
+        color: yellow;
+      } 
+}
